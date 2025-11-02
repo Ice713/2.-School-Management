@@ -16,5 +16,20 @@ namespace _2.School_Management
         {
             InitializeComponent();
         }
+
+        private void buttonDisplayStudent_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Student student = new Student(textBoxName.Text, int.Parse(textBoxGradeLevel.Text));
+
+                string studentDetails = student.GetDetails();
+
+                MessageBox.Show(studentDetails, "Student Details");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
     }
 }

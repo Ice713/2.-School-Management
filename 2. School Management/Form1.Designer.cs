@@ -90,6 +90,7 @@
             this.buttonDisplayStudent.TabIndex = 5;
             this.buttonDisplayStudent.Text = "Display Student Info";
             this.buttonDisplayStudent.UseVisualStyleBackColor = false;
+            this.buttonDisplayStudent.Click += new System.EventHandler(this.buttonDisplayStudent_Click);
             // 
             // Form1
             // 
