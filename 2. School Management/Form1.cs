@@ -21,7 +21,7 @@ namespace _2.School_Management
         {
             try
             {
-                Student student = new Student(textBoxName.Text, int.Parse(textBoxGradeLevel.Text));
+                Student student = new Student(textBoxName.Text, int.Parse(numericUpDownGrade.Text));
 
                 string studentDetails = student.GetDetails();
 
@@ -31,5 +31,6 @@ namespace _2.School_Management
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
+        }
     }
 }
