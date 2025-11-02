@@ -8,5 +8,15 @@ namespace _2.School_Management
 {
     internal class Person
     {
+        public string Name { get; set; }
+        public Person(string name, int age)
+        {
+            Name = name;
+        }
+
+        public virtual string GetDetails()
+        {
+            return $"Name: {Name}";
+        }
     }
 }
