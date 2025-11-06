@@ -8,16 +8,16 @@ namespace _2.School_Management
 {
     internal class Student : Person
     {
-        public int GradeLever { get; set; }
+        public int GradeLevel { get; set; }
 
         public Student(string name, int gradeLevel) : base(name)
         {
-            GradeLever = gradeLevel;
+            GradeLevel = gradeLevel;
         }
 
         public override string GetDetails()
         {
-            return $"{base.GetDetails()}\nGrade Level: {GradeLever}";
+            return $"{base.GetDetails()}\nGrade Level: {GradeLevel}";
         }
     }
 }
